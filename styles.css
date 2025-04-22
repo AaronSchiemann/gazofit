@@ -89,3 +89,30 @@ nav a {
 .feature-box p {
   font-size: 1.1rem;
 }
+main.content {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #fffaf4;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+.section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background-color: #f7f3ee;
+  border-left: 6px solid #1e5030;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+.section:hover {
+  transform: translateY(-3px);
+}
+.section h2,
+.section h3 {
+  color: #1e5030;
+  margin-top: 0;
+}
+.section p {
+  line-height: 1.6;
+}
