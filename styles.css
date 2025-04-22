@@ -1,4 +1,4 @@
-<!-- styles.css -->
+/* styles.css */
 body {
   font-family: 'Inter', sans-serif;
   font-size: 18px;
@@ -67,21 +67,25 @@ nav a {
   width: 100%;
   border-radius: 10px;
 }
-main.content {
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 3rem 2rem;
-  max-width: 800px;
-  margin: auto;
+  background-color: #ffffff;
 }
-main h2 {
+.feature-box {
+  width: 320px;
+  margin: 1rem;
+  padding: 2rem;
+  background: #eef5eb;
+  border-radius: 10px;
+  text-align: center;
+}
+.feature-box h3 {
   color: #1e5030;
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
-main p, main li {
+.feature-box p {
   font-size: 1.1rem;
-  line-height: 1.6;
-}
-ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
 }
