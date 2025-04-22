@@ -1,1 +1,87 @@
-
+<!-- styles.css -->
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  background: #fdfaf6;
+  color: #2e3d29;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1e5030;
+}
+nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #2e3d29;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  gap: 3rem;
+  text-align: center;
+}
+.hero-text {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+.hero-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  color: #1e5030;
+}
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.hero-text a {
+  display: inline-block;
+  background-color: #1e5030;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.hero-image {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+.hero-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+main.content {
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+main h2 {
+  color: #1e5030;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+main p, main li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
