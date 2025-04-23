@@ -165,3 +165,21 @@ footer {
   text-decoration: none;
 }
 
+
+/* Abstand über dem Hauptinhalt für Impressum, AGB etc. */
+.main-legal {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  min-height: 60vh;
+}
+
+/* Footer immer unten halten */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body > footer {
+  margin-top: auto;
+}
