@@ -30,7 +30,28 @@ nav a {
   color: #2e3d29;
   font-weight: 600;
   font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s ease;
 }
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #1e5030;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #1e5030;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
 .hero {
   display: flex;
   flex-wrap: wrap;
