@@ -137,16 +137,29 @@ main.content {
   font-size: 1.2rem;
   color: #2e3d29;
 }
+.angebot-zeile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.angebot-zeile.reverse {
+  flex-direction: row-reverse;
+}
+
 .angebot-bild {
-  max-height: 200px;
+  max-height: 300px;
   height: auto;
   width: auto;
-  max-width: 100%;
+  max-width: 45%;
   border-radius: 8px;
-  margin-bottom: 1rem;
-  display: block;
-  margin-left: 0;
-  margin-right: 0;
+  flex-shrink: 0;
+}
+
+.angebot-zeile .text {
+  flex: 1;
+  min-width: 250px;
 }
 
 
@@ -385,5 +398,14 @@ body > footer {
     padding: 0.8rem 1.4rem;
     border-radius: 25px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  }
+
+    .angebot-zeile {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .angebot-bild {
+    max-width: 100%;
   }
 }
