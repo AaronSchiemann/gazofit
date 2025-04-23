@@ -72,5 +72,13 @@
   </div>
 </footer>
 
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      setTimeout(() => {
+        const cta = document.getElementById("cta-float");
+        if (cta) cta.classList.add("visible");
+      }, 3000);
+    });
+  </script>   
 </body>
 </html>
