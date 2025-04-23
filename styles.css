@@ -137,7 +137,13 @@ main.content {
   font-size: 1.2rem;
   color: #2e3d29;
 }
-
+.angebot-bild {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: block;
+}
 
 
 
