@@ -279,13 +279,15 @@ body > footer {
   font-weight: 600;
   border-radius: 30px;
   text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  border: 2px solid rgba(255, 255, 255, 0.8); /* <--- das ist neu */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border: 2px solid #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 #cta-float a:hover {
   background-color: #174025;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
 }
 
 
