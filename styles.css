@@ -280,7 +280,9 @@ body > footer {
   border-radius: 30px;
   text-decoration: none;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  border: 2px solid rgba(255, 255, 255, 0.8); /* <--- das ist neu */
 }
+
 
 #cta-float a:hover {
   background-color: #174025;
