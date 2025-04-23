@@ -122,6 +122,24 @@ main.content {
 }
 
 
+.angebot-headline {
+  text-align: center;
+  margin: 3rem auto 2rem;
+  max-width: 800px;
+}
+.angebot-headline h2 {
+  font-size: 2.2rem;
+  color: #1e5030;
+  margin-bottom: 1rem;
+}
+.angebot-headline p {
+  font-size: 1.2rem;
+  color: #2e3d29;
+}
+
+
+
+
 
 footer {
   background-color: #1e5030;
