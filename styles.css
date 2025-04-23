@@ -255,31 +255,36 @@ body > footer {
   background-color: #174025;
 }
 
-#cta-button {
-  text-align: center;
-  margin-top: 2rem;
+#cta-float {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease, transform 1s ease;
 }
 
-#cta-button.cta-visible {
+#cta-float.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-#cta-button a {
+#cta-float a {
   display: inline-block;
   background-color: #1e5030;
   color: #fff;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
+  padding: 1rem 1.8rem;
+  font-size: 1rem;
   font-weight: 600;
   border-radius: 30px;
   text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-#cta-button a:hover {
+#cta-float a:hover {
   background-color: #174025;
 }
+
+
+
