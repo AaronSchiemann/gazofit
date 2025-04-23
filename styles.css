@@ -350,16 +350,12 @@ body > footer {
     padding: 2rem 1rem;
   }
 
-.feature-box {
-  width: 100%;
-  max-width: 320px;
-  margin: 1rem auto;
-  padding: 2rem;
-  background: #eef5eb;
-  border-radius: 10px;
-  text-align: center;
-  box-sizing: border-box;
-}
+ .feature-box {
+    width: 100%;
+    max-width: 320px;
+    margin: 1rem auto;
+    box-sizing: border-box;
+  }
 
 
   .contact-form {
