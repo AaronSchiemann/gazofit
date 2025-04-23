@@ -255,3 +255,31 @@ body > footer {
   background-color: #174025;
 }
 
+#cta-button {
+  text-align: center;
+  margin-top: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+#cta-button.cta-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#cta-button a {
+  display: inline-block;
+  background-color: #1e5030;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#cta-button a:hover {
+  background-color: #174025;
+}
