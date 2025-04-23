@@ -79,12 +79,14 @@ nav a {
   background-color: #ffffff;
 }
 .feature-box {
-  width: 320px;
-  margin: 1rem;
+  width: 100%;
+  max-width: 320px;
+  margin: 1rem auto;
   padding: 2rem;
   background: #eef5eb;
   border-radius: 10px;
   text-align: center;
+  box-sizing: border-box;
 }
 .feature-box h3 {
   color: #1e5030;
