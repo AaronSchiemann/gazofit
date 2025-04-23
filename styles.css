@@ -116,3 +116,30 @@ main.content {
 .section p {
   line-height: 1.6;
 }
+
+
+
+footer {
+  background-color: #1e5030;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+.footer-content {
+  max-width: 1000px;
+  margin: auto;
+}
+.footer-nav {
+  margin-top: 1rem;
+}
+.footer-nav a {
+  margin: 0 1rem;
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 400;
+}
+.footer-nav a:hover {
+  text-decoration: none;
+}
+
