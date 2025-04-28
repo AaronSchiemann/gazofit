@@ -118,6 +118,9 @@ nav a:hover::after {
 
 .hero-image img {
   width: 100%;
+  height: auto;
+  aspect-ratio: 700 / 466; /* oder 1.5 */
+  object-fit: cover;
   border-radius: 10px;
 }
 
