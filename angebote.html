@@ -56,20 +56,29 @@
 
     <section class="section">
       <div class="angebot-zeile">
-        <img src="images/danube-walk.webp"
-             srcset="images/danube-walk_small.webp 400w, images/danube-walk.webp 700w, images/danube-walk@2x.webp 1400w"
-             sizes="(max-width: 600px) 90vw, 700px"
-             alt="Gemütlicher Spaziergang entlang der Donau in Tuttlingen"
-             width="700"
-             height="466"
-             loading="eager"
-             class="angebot-bild">
+        <picture>
+          <!-- Desktop-Version ab 768px -->
+          <source srcset="images/spazieren_desktop.webp" media="(min-width: 768px)" type="image/webp" />
+          
+          <!-- Mobile-Version unter 768px -->
+          <source srcset="images/spazieren_mobil.webp" media="(max-width: 767px)" type="image/webp" />
+          
+          <!-- Fallback -->
+          <img src="images/spazieren_desktop.webp"
+               alt="Junge Person und Rentner spazieren gemeinsam am Fluss"
+               width="600"
+               height="400"
+               loading="eager"
+               class="angebot-bild" />
+        </picture>
+        
         <div class="text">
           <h3>Spazieren gehen</h3>
           <p>Gemeinsam an der frischen Luft unterwegs – unsere begleiteten Spaziergänge fördern Gesundheit, Mobilität und das Miteinander.</p>
         </div>
       </div>
     </section>
+
 
     <section class="section">
       <div class="angebot-zeile reverse">
