@@ -1,11 +1,34 @@
-<!-- angebote.html -->
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Angebote – Gemeinsam Fit</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- SEO -->
+  <meta name="description" content="Erleben Sie unsere Angebote in Tuttlingen: Spaziergänge, Sportübungen und Gemeinschaftsspiele für mehr Lebensfreude im Alltag.">
+  <meta name="keywords" content="Tuttlingen, Senioren, Bewegung, Spaziergang, Gesundheit, Brettspiel, Gemeinschaft, Angebote, Betreuung">
+  <meta name="author" content="Gemeinsam Fit Team">
+
+  <!-- Open Graph Preview -->
+  <meta property="og:title" content="Angebote – Gemeinsam Fit">
+  <meta property="og:description" content="Aktivitäten für Senioren in Tuttlingen: Bewegung, Spaß und Gemeinschaft.">
+  <meta property="og:image" content="https://gemeinsamfit.com/images/danube-walk.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gemeinsamfit.com/angebote.html">
+
+  <!-- Preload wichtigstes LCP-Bild -->
+  <link rel="preload" as="image" href="images/danube-walk.webp" type="image/webp">
+
+  <!-- Fonts optimiert laden -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  </noscript>
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,53 +48,72 @@
       <p>Hier finden Sie eine Übersicht unserer Aktivitäten, die für mehr Bewegung, Gemeinschaft und Lebensfreude sorgen.</p>
     </section>
 
-  <section class="section">
-    <div class="angebot-zeile">
-      <img src="images/danube-walk.webp" alt="Gemütlicher Spaziergang entlang der Donau in Tuttlingen" class="angebot-bild">
-      <div class="text">
-        <h3>Spazieren gehen</h3>
-        <p>Gemeinsam an der frischen Luft unterwegs – unsere begleiteten Spaziergänge fördern Gesundheit, Mobilität und das Miteinander.</p>
+    <section class="section">
+      <div class="angebot-zeile">
+        <img src="images/danube-walk.webp"
+             srcset="images/danube-walk_small.webp 400w, images/danube-walk.webp 700w, images/danube-walk@2x.webp 1400w"
+             sizes="(max-width: 600px) 90vw, 700px"
+             alt="Gemütlicher Spaziergang entlang der Donau in Tuttlingen"
+             width="700"
+             height="466"
+             loading="eager"
+             class="angebot-bild">
+        <div class="text">
+          <h3>Spazieren gehen</h3>
+          <p>Gemeinsam an der frischen Luft unterwegs – unsere begleiteten Spaziergänge fördern Gesundheit, Mobilität und das Miteinander.</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section">
-    <div class="angebot-zeile reverse">
-      <img src="images/sport.webp" alt="Sportliche Übungen halten uns gemeinsam Fit. Gemeinseim tun wir unserem Körper gutes mit leichten sportlichen Übungungen" class="angebot-bild">
-      <div class="text">
-        <h3>Leichte sportliche Übungen</h3>
-        <p>Mit gezielten Bewegungsübungen halten wir Körper und Geist fit. Unsere Angebote sind speziell auf Senioren abgestimmt.</p>
+    <section class="section">
+      <div class="angebot-zeile reverse">
+        <img src="images/sport.webp"
+             srcset="images/sport_small.webp 400w, images/sport.webp 700w, images/sport@2x.webp 1400w"
+             sizes="(max-width: 600px) 90vw, 700px"
+             alt="Sportliche Übungen halten uns gemeinsam Fit. Gemeinsam tun wir unserem Körper Gutes mit leichten sportlichen Übungen"
+             width="700"
+             height="466"
+             loading="eager"
+             class="angebot-bild">
+        <div class="text">
+          <h3>Leichte sportliche Übungen</h3>
+          <p>Mit gezielten Bewegungsübungen halten wir Körper und Geist fit. Unsere Angebote sind speziell auf Senioren abgestimmt.</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section">
-    <div class="angebot-zeile">
-      <img src="images/brettspiel.jpg" alt="Gemeinschaftsspiele unterstützen den Zusammenhalt und die Lebensfreude in Tuttlingen." class="angebot-bild">
-      <div class="text">
-        <h3>Gemeinschaftsspiele</h3>
-        <p>Ob Brettspiele, Gedächtnistraining oder kreatives Gestalten – unsere Spiele fördern Kommunikation, Freude und mentale Fitness.</p>
+    <section class="section">
+      <div class="angebot-zeile">
+        <img src="images/brettspiel.webp"
+             srcset="images/brettspiel_small.webp 400w, images/brettspiel.webp 700w, images/brettspiel@2x.webp 1400w"
+             sizes="(max-width: 600px) 90vw, 700px"
+             alt="Gemeinschaftsspiele unterstützen den Zusammenhalt und die Lebensfreude in Tuttlingen."
+             width="700"
+             height="466"
+             loading="eager"
+             class="angebot-bild">
+        <div class="text">
+          <h3>Gemeinschaftsspiele</h3>
+          <p>Ob Brettspiele, Gedächtnistraining oder kreatives Gestalten – unsere Spiele fördern Kommunikation, Freude und mentale Fitness.</p>
+        </div>
       </div>
+    </section>
+
+    <div id="cta-float">
+      <a href="kontakt.html#termin">Termin vereinbaren</a>
     </div>
-  </section>
-
-
-  <div id="cta-float">
-    <a href="kontakt.html#termin">Termin vereinbaren</a>
-  </div>
-  
   </main>
-  
+
   <footer>
-  <div class="footer-content">
-    <p>© 2025 Gemeinsam Fit – Alle Rechte vorbehalten.</p>
-    <nav class="footer-nav">
-      <a href="agb.html">AGB</a>
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
-    </nav>
-  </div>
-</footer>
+    <div class="footer-content">
+      <p>© 2025 Gemeinsam Fit – Alle Rechte vorbehalten.</p>
+      <nav class="footer-nav">
+        <a href="agb.html">AGB</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </div>
+  </footer>
 
   <script>
     window.addEventListener("DOMContentLoaded", () => {
@@ -80,6 +122,6 @@
         if (cta) cta.classList.add("visible");
       }, 3000);
     });
-  </script>  
+  </script>
 </body>
 </html>
