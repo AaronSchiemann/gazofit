@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://gemeinsamfit.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://gemeinsamfit.com/aboutus.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gemeinsamfit.com/angebote.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gemeinsamfit.com/kontakt.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://gemeinsamfit.com/impressum.html</loc>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://gemeinsamfit.com/agb.html</loc>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://gemeinsamfit.com/datenschutz.html</loc>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
