@@ -1,6 +1,4 @@
-/* ===================================================
-   Allgemeine Grundeinstellungen
-   =================================================== */
+/* styles.css */
 body {
   font-family: 'Inter', sans-serif;
   font-size: 18px;
@@ -8,19 +6,7 @@ body {
   padding: 0;
   background: #fdfaf6;
   color: #2e3d29;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
-
-body > footer {
-  margin-top: auto;
-}
-
-
-/* ===================================================
-   Header und Navigation
-   =================================================== */
 header {
   display: flex;
   justify-content: space-between;
@@ -29,51 +15,18 @@ header {
   background-color: #ffffff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
-
 header h1 {
   font-size: 2rem;
   font-weight: 800;
   color: #1e5030;
 }
-
-header h1 a {
-  color: inherit;
-  text-decoration: none;
-}
-
 nav a {
   margin-left: 2rem;
   text-decoration: none;
   color: #2e3d29;
   font-weight: 600;
   font-size: 1.1rem;
-  position: relative;
-  transition: color 0.3s ease;
 }
-
-nav a::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  height: 2px;
-  width: 0;
-  background-color: #1e5030;
-  transition: width 0.3s ease;
-}
-
-nav a:hover {
-  color: #1e5030;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-
-
-/* ===================================================
-   Hero-Bereich
-   =================================================== */
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -83,23 +36,19 @@ nav a:hover::after {
   gap: 3rem;
   text-align: center;
 }
-
 .hero-text {
   flex: 1 1 400px;
   max-width: 500px;
 }
-
 .hero-text h2 {
   font-size: 2.2rem;
   margin-bottom: 1.2rem;
   color: #1e5030;
 }
-
 .hero-text p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
 .hero-text a {
   display: inline-block;
   background-color: #1e5030;
@@ -110,24 +59,14 @@ nav a:hover::after {
   font-weight: 600;
   font-size: 1.1rem;
 }
-
 .hero-image {
   flex: 1 1 400px;
   max-width: 500px;
 }
-
 .hero-image img {
   width: 100%;
-  height: auto;
-  aspect-ratio: 700 / 466; /* oder 1.5 */
-  object-fit: cover;
   border-radius: 10px;
 }
-
-
-/* ===================================================
-   Features (Startseite)
-   =================================================== */
 .features {
   display: flex;
   flex-wrap: wrap;
@@ -135,7 +74,6 @@ nav a:hover::after {
   padding: 3rem 2rem;
   background-color: #ffffff;
 }
-
 .feature-box {
   width: 320px;
   margin: 1rem;
@@ -144,20 +82,13 @@ nav a:hover::after {
   border-radius: 10px;
   text-align: center;
 }
-
 .feature-box h3 {
   color: #1e5030;
   font-size: 1.5rem;
 }
-
 .feature-box p {
   font-size: 1.1rem;
 }
-
-
-/* ===================================================
-   Inhalt allgemeiner Seiten
-   =================================================== */
 main.content {
   padding: 3rem 2rem;
   max-width: 1000px;
@@ -166,7 +97,6 @@ main.content {
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.05);
 }
-
 .section {
   margin-bottom: 3rem;
   padding: 1.5rem;
@@ -175,305 +105,77 @@ main.content {
   border-radius: 6px;
   transition: transform 0.2s ease;
 }
-
 .section:hover {
   transform: translateY(-3px);
 }
-
 .section h2,
 .section h3 {
   color: #1e5030;
   margin-top: 0;
 }
-
 .section p {
   line-height: 1.6;
 }
 
 
 /* ===================================================
-   Angebotsseite
+   Formsubmit Kontaktformular modernisiert
    =================================================== */
-.angebot-headline {
-  text-align: center;
-  margin: 3rem auto 2rem;
-  max-width: 800px;
-}
-
-.angebot-headline h2 {
-  font-size: 2.2rem;
-  color: #1e5030;
-  margin-bottom: 1rem;
-}
-
-.angebot-headline p {
-  font-size: 1.2rem;
-  color: #2e3d29;
-}
-
-.angebot-zeile {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.angebot-zeile.reverse {
-  flex-direction: row-reverse;
-}
-
-.angebot-bild {
-  max-height: 300px;
-  height: auto;
-  width: auto;
-  max-width: 45%;
-  border-radius: 8px;
-  flex-shrink: 0;
-}
-
-.angebot-zeile .text {
-  flex: 1;
-  min-width: 250px;
-}
-
-
-/* ===================================================
-   Kontaktformular
-   =================================================== */
-.contact-form {
-  background-color: #fff;
-  padding: 2.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  width: 90%; /* statt feste Breite */
-  max-width: 800px; /* vorher 1000px – reduziert, damit’s nicht zu breit wirkt */
-  margin: 4rem auto; /* oben mehr Abstand */
-}
-
-.contact-form label {
-  display: block;
-  margin-top: 1rem;
-  font-weight: 600;
-}
-
-.contact-form input,
-.contact-form textarea {
+.form-container {
+  background: #fff8ee;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  max-width: 700px;
   width: 100%;
-  padding: 0.8rem;
-  margin-top: 0.3rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  margin: 4rem auto;
+}
+
+.form-container h2 {
+  color: #1e5030;
+  margin-bottom: 0.5rem;
+}
+
+.form-container p {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.form-container form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-container input,
+.form-container textarea {
   font-family: inherit;
   font-size: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
-.contact-form button {
-  margin-top: 1.5rem;
-  background-color: #1e5030;
-  color: #fff;
-  border: none;
+.form-container textarea {
+  grid-column: 1 / -1;
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-container button {
+  grid-column: 1 / -1;
   padding: 1rem;
+  background-color: #1e5030;
+  color: white;
   font-weight: 600;
-  border-radius: 30px;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-.contact-form button:hover {
-  background-color: #174025;
-}
-
-
-/* ===================================================
-   Team-Mitglieder (Über uns)
-   =================================================== */
-.team-member {
-  background-color: #eef5eb;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-  margin-bottom: 1.5rem;
-  transition: transform 0.2s ease;
-}
-
-.team-member:hover {
-  transform: translateY(-3px);
-}
-
-.team-member h4 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  color: #1e5030;
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
-.team-member p {
-  margin: 0.3rem 0;
-  line-height: 1.5;
-}
-
-
-/* ===================================================
-   Footer
-   =================================================== */
-footer {
-  background-color: #1e5030;
-  color: #ffffff;
-  text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 3rem;
-}
-
-.footer-content {
-  max-width: 1000px;
-  margin: auto;
-}
-
-.footer-nav {
-  margin-top: 1rem;
-}
-
-.footer-nav a {
-  margin: 0 1rem;
-  color: #ffffff;
-  text-decoration: underline;
-  font-weight: 400;
-}
-
-.footer-nav a:hover {
-  text-decoration: none;
-}
-
-
-/* ===================================================
-   Floating Call-to-Action Button
-   =================================================== */
-#cta-float {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  z-index: 1000;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-#cta-float.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-#cta-float a {
-  display: inline-block;
-  background-color: #1e5030;
-  color: #fff;
-  padding: 1rem 1.8rem;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 30px;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  border: 2px solid #fff;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#cta-float a:hover {
-  background-color: #174025;
-  transform: scale(1.05);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
-}
-
-
-/* ===================================================
-   Sonstiges & Media Queries
-   =================================================== */
-.main-legal {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  min-height: 60vh;
-}
-
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1.5rem;
-  }
-
-  header h1 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  nav a {
-    margin: 0;
-    font-size: 1rem;
-  }
-
-  .hero {
-    flex-direction: column;
-    padding: 2rem 1rem;
-    text-align: center;
-  }
-
-  .hero-text {
-    max-width: 100%;
-  }
-
-  .hero-text h2 {
-    font-size: 1.7rem;
-  }
-
-  .hero-text p {
-    font-size: 1rem;
-  }
-
-  .hero-text a {
-    font-size: 1rem;
-    padding: 0.8rem 1.2rem;
-  }
-
-  .features {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-
-  .feature-box {
-    width: 100%;
-    max-width: 320px;
-    margin: 1rem auto;
-    box-sizing: border-box;
-  }
-
-  .contact-form {
-    padding: 2rem 1rem;
-    max-width: 100%;
-    box-shadow: none;
-  }
-
-  #cta-float {
-    bottom: 1rem;
-    right: 1rem;
-  }
-
-  #cta-float a {
-    font-size: 0.9rem;
-    padding: 0.8rem 1.4rem;
-    border-radius: 25px;
-  }
-
-  .angebot-zeile {
-    flex-direction: column !important;
-    text-align: center;
-  }
-
-  .angebot-bild {
-    max-width: 100%;
-  }
+.form-container button:hover {
+  background-color: #174026;
 }
