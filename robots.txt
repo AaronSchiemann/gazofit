@@ -1,0 +1,8 @@
+# robots.txt für Gemeinsam Fit
+
+# Erlaube allen Suchmaschinen den vollständigen Zugriff
+User-agent: *
+Disallow:
+
+# Verweise auf die Sitemap
+Sitemap: https://gemeinsamfit.com/sitemap.xml
