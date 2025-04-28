@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -5,16 +6,26 @@
   <title>Kontakt – Gemeinsam Fit</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Preconnect für bessere Performance -->
+  <!-- SEO -->
+  <meta name="description" content="Kontaktieren Sie Gemeinsam Fit in Tuttlingen für Angebote zu Bewegung, Gemeinschaft und Lebensfreude im Alltag.">
+  <meta name="keywords" content="Kontakt, Tuttlingen, Senioren, Betreuung, Bewegung, Hilfe, Unterstützung, Gemeinsam Fit">
+  <meta name="author" content="Gemeinsam Fit Team">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kontakt – Gemeinsam Fit">
+  <meta property="og:description" content="Nehmen Sie Kontakt mit Gemeinsam Fit auf und erfahren Sie mehr über unsere Unterstützungsangebote für Senioren.">
+  <meta property="og:image" content="https://gemeinsamfit.com/images/gemeinsam_fit.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gemeinsamfit.com/kontakt.html">
+
+  <!-- Fonts & Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-  <!-- Schriftart asynchron laden -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   </noscript>
-  
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,30 +39,28 @@
     </nav>
   </header>
 
-  <main class="content">
-    <h2>Kontaktformular</h2>
-    <p>Sie möchten mehr erfahren oder direkt mit uns in Kontakt treten? Schreiben Sie uns:</p>
-    <p><strong>Kontakt:</strong><br>
-      Telefon: <a href="tel:+4915737917819">0157-37917819</a><br>
-      E-Mail: <a href="mailto:info@gemeinsamfit.com">info@gemeinsamfit.com</a>
-    </p>
+  <main>
+    <div class="form-container">
+      <h2>Kontaktformular</h2>
+      <p>Sie möchten mehr erfahren oder direkt mit uns in Kontakt treten? Schreiben Sie uns:</p>
 
-    <form action="https://formsubmit.co/info@gemeinsamfit.com" method="POST">
-      <input type="text" name="firstname" placeholder="Vorname" required>
-      <input type="text" name="lastname" placeholder="Nachname" required>
-      <input type="tel" name="phone" placeholder="Telefonnummer" required>
-      <input type="email" name="email" placeholder="E-Mail">
-      <input type="text" name="street" placeholder="Straße und Hausnummer" required>
-      <input type="text" name="zip" placeholder="PLZ" required>
-      <input type="text" name="city" placeholder="Ort" required>
-      <textarea name="message" placeholder="Ihre Nachricht" rows="5" required></textarea>
+      <form action="https://formsubmit.co/info@gemeinsamfit.com" method="POST">
+        <input type="text" name="firstname" placeholder="Vorname" required>
+        <input type="text" name="lastname" placeholder="Nachname" required>
+        <input type="tel" name="phone" placeholder="Telefonnummer" required>
+        <input type="email" name="email" placeholder="E-Mail" required>
+        <input type="text" name="street" placeholder="Straße und Hausnummer" required>
+        <input type="text" name="zip" placeholder="PLZ" required>
+        <input type="text" name="city" placeholder="Ort" required>
+        <textarea name="message" placeholder="Ihre Nachricht" required></textarea>
 
-      <!-- Formsubmit Optionen -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://gemeinsamfit.com/danke.html">
+        <!-- Formsubmit Optionen -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://gemeinsamfit.com/danke.html">
 
-      <button type="submit">Nachricht senden</button>
-    </form>
+        <button type="submit">Nachricht senden</button>
+      </form>
+    </div>
   </main>
 
   <footer>
