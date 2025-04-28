@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Kontakt – Gemeinsam Fit</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -17,35 +18,24 @@
       <a href="kontakt.html">Kontakt</a>
     </nav>
   </header>
+
   <main class="content">
-    <h2>Kontakt</h2>
-    <p>Sie möchten mehr erfahren oder direkt mit uns in Kontakt treten?</p>
-    <p>Telefon: 01234 567890<br />E-Mail: info@gemeinsamfit.com</p>
-    
-    <form action="https://deine-domain-bei-strato.de/sendmail.php" method="POST" class="contact-form">
-      <label for="firstname">Vorname</label>
-      <input type="text" id="firstname" name="firstname" required>
+    <h2>Kontaktformular</h2>
+    <p>Sie möchten mehr erfahren oder direkt mit uns in Kontakt treten? Schreiben Sie uns:</p>
 
-      <label for="lastname">Nachname</label>
-      <input type="text" id="lastname" name="lastname" required>
+    <form action="https://formsubmit.co/info@gemeinsamfit.com" method="POST">
+      <input type="text" name="firstname" placeholder="Vorname" required>
+      <input type="text" name="lastname" placeholder="Nachname" required>
+      <input type="tel" name="phone" placeholder="Telefonnummer" required>
+      <input type="email" name="email" placeholder="E-Mail" required>
+      <input type="text" name="street" placeholder="Straße und Hausnummer" required>
+      <input type="text" name="zip" placeholder="PLZ" required>
+      <input type="text" name="city" placeholder="Ort" required>
+      <textarea name="message" placeholder="Ihre Nachricht" rows="5" required></textarea>
 
-      <label for="phone">Telefon</label>
-      <input type="tel" id="phone" name="phone">
-
-      <label for="email">E-Mail</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="street">Straße & Hausnummer</label>
-      <input type="text" id="street" name="street" required>
-
-      <label for="zip">PLZ</label>
-      <input type="text" id="zip" name="zip" required>
-
-      <label for="city">Ort</label>
-      <input type="text" id="city" name="city" required>
-
-      <label for="message">Ihre Nachricht</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+      <!-- Formsubmit Optionen -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://gemeinsamfit.com/danke.html">
 
       <button type="submit">Nachricht senden</button>
     </form>
