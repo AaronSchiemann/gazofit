@@ -17,7 +17,13 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://gemeinsamfit.com/">
   
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <!-- Neue Variante (asynchron + preload + font-display:swap) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  </noscript>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -37,7 +43,7 @@
       <a href="kontakt.html">JETZT INFORMIEREN</a>
     </div>
     <div class="hero-image">
-      <img src="images/gemeinsam_fit.webp" alt="Gemeinsam Fit in Tuttlingen, Für mehr Bewegung und Spaß im Leben" />
+      <img src="images/gemeinsam_fit.webp" alt="Gemeinsam Fit in Tuttlingen. Für mehr Bewegung und Spaß im Leben" />
     </div>
   </section>
   <section class="features">
