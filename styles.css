@@ -384,6 +384,73 @@ footer {
 }
 
 
+
+/* ===================================================
+   Formsubmit Kontaktformular modernisiert
+   =================================================== */
+.form-container {
+  background: #fff8ee;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  max-width: 700px;
+  width: 100%;
+  margin: 4rem auto;
+}
+
+.form-container h2 {
+  color: #1e5030;
+  margin-bottom: 0.5rem;
+}
+
+.form-container p {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.form-container form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-container input,
+.form-container textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.form-container textarea {
+  grid-column: 1 / -1;
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-container button {
+  grid-column: 1 / -1;
+  padding: 1rem;
+  background-color: #1e5030;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form-container button:hover {
+  background-color: #174026;
+}
+
+
+
+
+
 /* ===================================================
    Sonstiges & Media Queries
    =================================================== */
