@@ -57,21 +57,22 @@
         E-Mail: <a href="mailto:info@gemeinsamfit.com">info@gemeinsamfit.com</a>
       </p>
 
-      <form action="https://formspree.io/f/xovdjerr" method="POST">
-        <input type="text" name="firstname" placeholder="Vorname" required>
-        <input type="text" name="lastname" placeholder="Nachname" required>
-        <input type="tel" name="phone" placeholder="Telefonnummer" required>
-        <input type="email" name="email" placeholder="E-Mail" required>
-        <input type="text" name="street" placeholder="Straße und Hausnummer" required>
-        <input type="text" name="zip" placeholder="PLZ" required>
-        <input type="text" name="city" placeholder="Ort" required>
+      <form action="https://formsubmit.co/info@gemeinsamfit.com" method="POST">
+        <input type="text"    name="firstname" placeholder="Vorname"                   required>
+        <input type="text"    name="lastname"  placeholder="Nachname"                  required>
+        <input type="tel"     name="phone"     placeholder="Telefonnummer"             required>
+        <input type="email"   name="email"     placeholder="E-Mail"                    required>
+        <input type="text"    name="street"    placeholder="Straße und Hausnummer"     required>
+        <input type="text"    name="zip"       placeholder="PLZ"                       required>
+        <input type="text"    name="city"      placeholder="Ort"                       required>
         <textarea name="message" placeholder="Ihre Nachricht" required></textarea>
-
-        <!-- Formsubmit Optionen -->
+      
+        <!-- Redirect nach Absenden -->
+        <input type="hidden" name="_next"    value="https://gemeinsamfit.de/danke.html">
+        <!-- Captcha ausschalten (optional) -->
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://gemeinsamfit.com/danke.html">
-
-        <button type="submit">Nachricht senden</button>
+      
+        <button type="submit">Absenden</button>
       </form>
     </div>
   </main>
