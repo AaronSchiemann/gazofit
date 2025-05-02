@@ -98,14 +98,22 @@
 
     <section class="section">
       <div class="angebot-zeile">
-        <img src="images/brettspiel.webp"
-             srcset="images/brettspiel_small.webp 400w, images/brettspiel.webp 700w, images/brettspiel@2x.webp 1400w"
-             sizes="(max-width: 600px) 90vw, 700px"
-             alt="Gemeinschaftsspiele unterstützen den Zusammenhalt und die Lebensfreude in Tuttlingen."
-             width="700"
-             height="466"
-             loading="eager"
-             class="angebot-bild">
+        <picture>
+          <!-- Desktop-Version ab 768px -->
+          <source srcset="images/gruppenspiel_desktop.webp" media="(min-width: 768px)" type="image/webp" />
+          
+          <!-- Mobile-Version unter 768px -->
+          <source srcset="images/gruppenspiel_mobil.webp" media="(max-width: 767px)" type="image/webp" />
+          
+          <!-- Fallback -->
+          <img src="images/brettspiel_desktop.webp"
+               alt="Gemeinschaftsspiele unterstützen den Zusammenhalt und die Lebensfreude in Tuttlingen."
+               width="700"
+               height="466"
+               loading="eager"
+               class="angebot-bild" />
+        </picture>
+    
         <div class="text">
           <h3>Gemeinschaftsspiele</h3>
           <p>Ob Brettspiele, Gedächtnistraining oder kreatives Gestalten – unsere Spiele fördern Kommunikation, Freude und mentale Fitness.</p>
