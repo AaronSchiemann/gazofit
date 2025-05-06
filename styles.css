@@ -434,6 +434,32 @@ footer {
 
 
 
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: 2px solid #1e5030;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #1e5030;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0.5rem;
+}
+
+.cta-button:hover {
+  background-color: #1e5030;
+  color: #fff;
+}
+
+.cta-container {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+
 /* ===================================================
    Formsubmit Kontaktformular modernisiert
    =================================================== */
