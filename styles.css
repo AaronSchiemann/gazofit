@@ -224,7 +224,7 @@ main.content {
 
 .angebot-bild {
   width: 100%;
-  max-width: 600px;        /* maximale Breite für große Displays */
+  max-width: 500px;        /* maximale Breite für große Displays */
   height: auto;
   max-height: none;        /* Höhenbegrenzung aufheben */
   border-radius: 8px;
